@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository
 
 //Classes repository que irão fazer a conexão diretamente com o Banco de dados
 @Repository
-interface CustomerRepotitory: JpaRepository<Customer, Long> {
+interface CustomerRepository: JpaRepository<Customer, Long> {
 }
