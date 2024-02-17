@@ -8,7 +8,7 @@ import java.util.UUID
 @Entity // classe que se tornará uma tabela no banco de dados
 @Table(name = "Credit") // alterando o nome da tabela
 data class Credit (
-    @Column(nullable = false, unique = true) val creditCode: UUID = UUID.randomUUID(),
+    @Column(nullable = false, unique = true) var creditCode: UUID = UUID.randomUUID(),
     @Column(nullable = false) val creditValue: BigDecimal = BigDecimal.ZERO,
     @Column(nullable = false) val dayFirstInstaltment: LocalDate,
     val numberOfInstaltment: Int = 0,

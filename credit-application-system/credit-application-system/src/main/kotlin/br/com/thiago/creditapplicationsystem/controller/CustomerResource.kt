@@ -26,9 +26,9 @@ class CustomerResource(
 ) {
     @PostMapping // método de inserir dados no banco e salvar
     //RequestBody -> estamos avisando que será inserindo os dados através de json no corpo da requisição
-    fun saveCustomer(@RequestBody @Valid customerDto: CustumerDto): ResponseEntity<String> {
-        val savedCustomer = this.customerService.save(customerDto.toEntity())
-        return ResponseEntity.status(HttpStatus.OK).body("Customer ${savedCustomer.email} saved!")
+    fun saveCustomer(@RequestBody @Valid customerDto: CustumerDto): ResponseEntity<CustomerView> {
+        val savedCustomer: Customer = this.customerService.save(customerDto.toEntity())
+        return ResponseEntity.status(HttpStatus.OK).body(CustomerView(savedCustomer))
     }
 
     @GetMapping("/{id}")
