@@ -4,6 +4,12 @@
 API REST SPRING BOOT E KOTLIN 🍃💜 para a empresa fornecer aos seus clientes as seguintes funcionalidades:
 
 
+## Funcionalidades
+
+- Inclusão de Cliente, com cadastro completo de dados.
+- Validação de dados.
+- Pedido de crédito e status do pedido.
+
 
 
 ## Stack utilizada
@@ -11,14 +17,6 @@ API REST SPRING BOOT E KOTLIN 🍃💜 para a empresa fornecer aos seus clientes
 
 **Back-end:** Java v.17, Kotlin v1.7.22,  Spring Boot Spring Boot v3.0.3, Gradle v7.6, H2 v2.1.214,Flyway
 v9.5.1
-
-
-
-
-## Funcionalidades
-
-- Inclusão de Cliente, com cadastro completo de dados.
-- Pedido de crédito e status do pedido
 
 
 
